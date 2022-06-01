@@ -28,7 +28,7 @@ class FromGrayscale(
 
         # Calculate the indices from the grayscale data of the image
         new_indices = element.annotations.convert("L").tobytes()
-        new_indices = np.fromstring(new_indices, dtype=np.uint8)
+        new_indices = np.frombuffer(new_indices, dtype=np.uint8)
         new_indices.resize(annotation.indices.shape)
         new_indices = new_indices.astype(np.uint16)
 
