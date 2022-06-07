@@ -33,7 +33,11 @@ class FromGrayscale(
         new_indices = new_indices.astype(np.uint16)
 
         # Set the indices to the calculated values
-        annotation.indices = new_indices
+        try:
+            annotation.indices = new_indices
+        except Exception as e:
+            self.logger.error("Failed to process: %s" % element.image.filename)
+            raise e
 
         then(
             ImageSegmentationInstance(
