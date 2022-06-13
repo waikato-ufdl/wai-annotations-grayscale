@@ -33,9 +33,9 @@ setup(
         "wai",
         "wai.annotations"
     ],
-    version="1.0.0",
-    author='Corey Sterling',
-    author_email='coreytsterling@gmail.com',
+    version="1.0.1",
+    author='Peter Reutemann',
+    author_email='fracpete@waikato.ac.nz',
     install_requires=[
         "wai.annotations.core>=0.1.6"
     ],

@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.1 (????-??-??)
+1.0.1 (2022-06-13)
 ------------------
 
 - `FromGrayscale` class now uses `numpy.frombuffer` instead of deprecated `numpy.fromstring` method.
